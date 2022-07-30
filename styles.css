@@ -1,0 +1,542 @@
+/*CSS FOR PERSONAL PORTFOLIO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+:root{
+    --color-tranquille: #9412ff;
+    --color-soothing: #3800fe;
+    --color-tranquille-dark: #7c12ff;
+    --color-tranquille-light: #ac12ff;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: #371B58;
+    /*font-weight: bold;*/
+}
+
+a{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* CLIPBOARD CSS */
+/**************************************************************************************************************************************************/
+
+hr{
+    margin: 15px 40px 20px 40px;
+    margin-bottom: 0;
+    border: 5px solid #4D4C7D;
+    border-radius: 10px;
+}
+
+.header{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 3px;
+    color: #E9D5DA;
+}
+
+.hard-board{
+    width: 505px;
+    height: 620px;
+    margin: 0px auto;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #363062;
+}
+
+a:hover{
+    color: #A35D6A;
+}
+
+/* Hides the scroll bar */
+.project-list{
+    scrollbar-width: none;  /* Firefox */
+}
+
+.paper{
+    width: 410px;
+    height: 520px;
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    background-color: wheat;
+}
+
+.line{
+    width: 100px;
+    height: 10px;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+    color: #363062;
+    font-weight: bold;
+}
+
+fieldset{
+    width: 100%;
+    height: 72%;
+    border: hidden;
+    overflow: auto;
+    position: relative;
+    bottom: 10px;
+}
+
+.project-tile{
+    display: inline-block;
+}
+
+.project-list{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.hole{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 0 auto;
+    border-radius: 100%;
+    background-color: #371B58;
+}
+
+.concave-left{
+    position: relative;
+    right: 10px;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle at top left,transparent 10px, #4D4C7D 0) top left;
+    background-color: #371B58;
+}
+
+.concave-right{
+    position: relative;
+    left: 100px;
+    bottom: 10px;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle at top right,transparent 10px, #4D4C7D 0) top right;
+    background-color: #371B58;
+}
+
+.clip-1{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+    margin: 40px auto 0px auto;
+    background-color: #4D4C7D;
+}
+
+.clip-2{
+    width: 200px;
+    height: 15px;
+    border-radius: 20px 20px 0 0 ;
+    margin: 0 auto 0 auto;
+    background-color: #4D4C7D;
+}
+
+.clip-3{
+    position: relative;
+    width: 200px;
+    height: 45px;
+    margin: auto;
+    background-color: #4D4C7D;
+}
+
+/* NAVBAR CSS */
+/******************************************************************************************************************************/
+
+#navbar{
+    position: absolute;
+    right: 45px;
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-content{
+    display: none;
+    position: absolute;
+    right: 2px;
+    background-color: white;
+    min-width: 130px;
+    border-radius: 10px;
+    border: solid;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 12px;
+    z-index: 1;
+}
+
+#navbar:hover .navbar-content{
+    display: block;
+}
+
+#navbar:hover{
+    color: #D9C6A5;
+}
+
+/* FOREGROUND CSS */
+/***********************************************************************************************************************************/
+
+#foreground::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #371B58;
+    opacity: 0.8;
+    filter: blur(8px);
+}
+
+/* WELCOME-SECTION CSS */
+/***********************************************************************************************************************************/
+
+.welcome-section{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.welcome-section.top{
+    top: 200px;
+    left: 285px;
+    color: #EED180;
+    font-size: 65px;
+}
+
+.welcome-section.bottom{
+    top: 320px;
+    left: 440px;
+    color: #FFF89C;
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+/* X-MARK CSS */
+/******************************************************************************************************************************/
+
+#welcome-section, #contact-section, #work-section, #foreground{
+    visibility: hidden;
+}
+
+.x-mark{
+    content: '';
+    position: fixed;
+    z-index: 2;
+}
+
+#hide{
+    margin-left: 35px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 8px 12px;
+    background-color: #F7E7BD;
+}
+
+#hide:hover{
+    background-color: #C26565;
+}
+
+.list-1{
+    margin: 10px;
+    font-size: 25px;
+}
+
+#show, #show-1, #show-2{
+    cursor: pointer;
+    border: none;
+    color:#363062;
+    padding: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+#show:hover{
+    background-color: lightgrey;
+    padding-right: 33px;
+}
+
+#show-1:hover{
+    background-color: lightgrey;
+    padding-right: 47px;
+}
+
+#show-2:hover{
+    background-color: lightgrey;
+    padding-right: 10px;
+}
+
+/* WORK-SECTION CSS */
+/******************************************************************************************************************************/
+
+.work-section{
+    content: '';
+    position: absolute;
+    font-weight: bold;
+    z-index: 2;
+}
+
+
+.work-section.bottom{
+    top: 490px;
+    left: 585px;
+    margin-top: 40px;
+}
+
+.view-all{
+    color: #D75281;
+    font-size: 35px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background-color: #FFF89C;
+}
+
+.btn:hover{
+    color: #B93160;
+}
+
+/* CONTACT-SECTION CSS */
+/*******************************************************************************************************************************/
+
+.contact-section{
+    content: '';
+    position: absolute;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.contact-section.top{
+    top: 135px;
+    left: 355px;
+    color: #EED180;
+    font-size: 65px;
+}
+
+#contact-links{
+    content: '';
+    position: absolute;
+    font-weight: bold;
+    z-index: 2;
+    top: 250px;
+    left: 222px;
+    margin-top: 35px;
+}
+
+.icon-boxes{
+    width: 160px;
+    height: 160px;
+    background-color: #FFF89C;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 10px;
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon-boxes:hover {
+    transform: translateY(8px);
+  }
+
+#icon-first{
+    position: relative;
+    left: 2.5px;
+    font-size: 160px;
+    color: #D75281;
+}
+
+#icon-first:hover {
+    color: #B93160;
+}
+
+.contact-label-first{
+    position: relative;
+    left: 18px;
+    display: block;
+    color: white;
+    font-size: 35px;
+}
+
+#icon-second{
+    position: relative;
+    left: 9.5px;
+    font-size: 160px;
+    color: #D75281;
+}
+
+#icon-second:hover {
+    color: #B93160;
+}
+
+.contact-label-second{
+    position: relative;
+    left: 5px;
+    display: block;
+    color: white;
+    font-size: 35px;
+}
+
+#icon-third{
+    position: relative;
+    right: 1px;
+    font-size: 160px;
+    color: #D75281;
+}
+
+#icon-third:hover {
+    color: #B93160;
+}
+
+.contact-label-third{
+    position: relative;
+    left: 22px;
+    display: block;
+    color: white;
+    font-size: 35px;
+}
+
+#icon-fourth{
+    position: relative;
+    left: 19px;
+    font-size: 160px;
+    color: #D75281;
+}
+
+#icon-fourth:hover {
+    color: #B93160;
+}
+
+.contact-label-fourth{
+    position: relative;
+    left: 22px;
+    display: block;
+    color: white;
+    font-size: 35px;
+}
+
+/* CAROUSELL ANIMATION CSS */
+/******************************************************************************************************************************/
+
+#background-box{
+    position: absolute;
+    content: '';
+    z-index: 2;
+    width: 800px;
+    height: 250px;
+    top: 220px;
+    left: 275px;
+    background-color: #7858A6;
+    display: flex;
+    flex-flow: row;
+    overflow-y: auto;
+    overflow-x: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    animation: colorchange 5s infinite ease-in-out;
+}
+
+.mini-box-first, .mini-box-second, .mini-box-third, .mini-box-fourth{
+    margin: 30px 0;
+    position: relative;
+    border-radius: 15px;
+    top: 7px;
+    left: 770px;
+    width: 175px;
+    height: 175px;
+    background-color: #FFF89C;
+    animation: carousell 10s infinite ease-in-out;
+}
+
+/* animation: name, duration, timing function, delay, iteration count, direction, fill mode, play state;*/
+.mini-box-second{
+    background-color: #FFF89C;
+    animation-delay: 0.3s;
+}
+
+.mini-box-third{
+    background-color: #FFF89C;
+    animation-delay: 0.6s;
+}
+
+.mini-box-fourth{
+    background-color: #FFF89C;
+    animation-delay: 0.9s;
+}
+
+@keyframes carousell {
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(-1600px);
+    }
+}
+
+@keyframes colorchange {
+    0%{
+        background-color: #7858A6;
+    }
+    25%{
+        background-color: #4C3575;
+    }
+    50%{
+        background-color: #7858A6;
+    }
+    75%{
+        background-color: #5B4B8A;
+    }
+    100%{
+        background-color: #7858A6;
+    }
+}
+
+img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 83%;
+    object-fit: cover;
+  }
+
+.project-title{
+    position: relative;
+    bottom: 15px;
+    color: #363062;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.first{
+    left: 19px;
+}
+
+.second{
+    left: 16px;
+}
+
+.third{
+    left: 16px;
+}
+
+.fourth{
+    left: 27px;
+}
+
+/*************************************************************************************************************************************/

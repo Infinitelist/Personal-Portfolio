@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Personal Portfolio!</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <i class="fa-solid fa-bars"></i>
+
+            <div class="navbar-content">
+                <p class="list-1">
+                    <button id="show" onclick="myFunction()">
+                        About 
+                    </button>
+
+                <p class="list-1">
+                    <button id="show-1" onclick="myFunction_1()">
+                        Work
+                    </button>
+                </p>
+
+                <p class="list-1">
+                    <button id="show-2" onclick="myFunction_2()">
+                        Contact
+                    </button>
+                </p>
+            </div>
+        </nav>
+
+        <div id="foreground">
+            <section id="welcome-section">
+                <h1 class="welcome-section top">Welcome! I'm Infinitelist</h1>
+                <p class="welcome-section bottom">A software developer</p>
+            </section>
+
+            <section id="work-section">
+                <div id="background-box">
+                    <div id="carousell-box-1" class="mini-box-first">
+                        <a href="https://infinitelist.github.io/SurveyForm/" target="_blank">
+                            <img class="project-img" src="SurveyForm.png" alt="project">
+                            <p class="project-title first">
+                                <span class="code">&lt;</span>
+                                Survey Form
+                                <span class="code">&#47;&gt;</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div id="carousell-box-2" class="mini-box-second">
+                        <a href="https://infinitelist.github.io/LandingPage/#" target="_blank">
+                            <img class="project-img" src="LandingPage.png" alt="project">
+                            <p class="project-title second">
+                                <span class="code">&lt;</span>
+                                Landing Page
+                                <span class="code">&#47;&gt;</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div id="carousell-box-3" class="mini-box-third">
+                        <a href="https://infinitelist.github.io/TributePage/" target="_blank">
+                            <img class="project-img" src="TributePage.png" alt="project">
+                            <p class="project-title third">
+                                <span class="code">&lt;</span>
+                                Tribute Page
+                                <span class="code">&#47;&gt;</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div id="carousell-box-4" class="mini-box-fourth">
+                        <a href="https://infinitelist.github.io/TechnicalPage/" target="_blank">
+                            <img class="project-img" src="TechnicalPage.png" alt="project">
+                            <p class="project-title fourth">
+                                <span class="code">&lt;</span>
+                                Technical
+                                <span class="code">&#47;&gt;</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                    <p class="work-section bottom">
+                        <a href="https://codepen.io/your-work" class="btn view-all" target="_blank">
+                            ViewAll
+                        </a>
+                    </p>
+            </section>
+
+            <section id="contact-section">
+                <h2 class="contact-section top">Let's work together...</h2>
+
+                <div id="contact-links">
+                    <div class="icon-boxes">
+                        <a id="profile-link" class="btn contact-details" href="https://github.com/Infinitelist" target="_blank">
+                            <i id="icon-first" class="fa-brands fa-github"></i>
+                            <label class="contact-label-first">
+                                GitHub
+                            </label>
+                        </a>
+                    </div>
+    
+                    <div class="icon-boxes">
+                        <a id="profile-link" class="btn contact-details" href="https://www.linkedin.com/in/rutherford-labbe-9b39a9244/" target="_blank">
+                            <i id="icon-second" class="fa-brands fa-linkedin"></i>
+                            <label class="contact-label-second">
+                                LinkedIn
+                            </label>
+                        </a>
+                    </div>
+    
+                    <div class="icon-boxes">
+                        <a class="btn contact-details" href="mailto:rutherfordlabbe7@outlook.com" target="_blank">
+                            <i id="icon-third" class="fa-solid fa-at"></i>
+                            <label class="contact-label-third">
+                                E-mail
+                            </label>
+                        </a>
+                    </div>
+    
+                    <div class="icon-boxes">
+                        <a class="btn contact-details" href="tel:321-337-6723" target="_blank">
+                            <i id="icon-fourth" class="fa-solid fa-mobile"></i>
+                            <label class="contact-label-fourth">
+                                Phone
+                            </label>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            
+            <div class="x-mark">
+                <button id="hide">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <section id="projects">
+            <div id="clip-board">
+                <div class="clip-1">
+                    <div class="line"></div>
+                    <div class="hole"></div>
+                    <div class="concave-left"></div>
+                    <div class="concave-right"></div>
+                </div>
+
+                <div class="clip-2"></div>
+                <div class="hard-board">
+                    <div class="clip-3">
+                        <div class="header">{Infinitelist}</div>
+                    </div>
+                    <section class="paper">
+                        <div class="title">Personal Projects</div>
+                        <hr>
+                        <fieldset class="project-list">
+                            <label class="project-tile" for="acorn">
+                                <input id="acorn" type="checkbox" name="projects" value="acorn" checked>
+                                <a href="https://infinitelist.github.io/SurveyForm/" target="_blank">
+                                    https://infinitelist.github.io/SurveyForm/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="landing-page">
+                                <input id="landing-page" type="checkbox" name="projects" value="landing-page" checked>
+                                <a href="https://infinitelist.github.io/LandingPage/#" target="_blank">
+                                    https://infinitelist.github.io/LandingPage/#
+                                </a>
+                            </label>
+                            <label class="project-tile" for="tribute-page">
+                                <input id="tribute-page" type="checkbox" name="projects" value="tribute-page" checked>
+                                <a href="https://infinitelist.github.io/TributePage/" target="_blank">
+                                    https://infinitelist.github.io/TributePage/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="technical-page">
+                                <input id="technical-page" type="checkbox" name="projects" value="technical-page" checked>
+                                <a href="https://infinitelist.github.io/TechnicalPage/" target="_blank">
+                                    https://infinitelist.github.io/TechnicalPage/
+                                </a>
+                            </label>
+
+                            <!---------------------------------------------------------------------------------------------->
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                            <label class="project-tile" for="In_Progress">
+                                <input id="In_Progress" type="checkbox" name="projects" value="In_Progress" checked>
+                                <a href="#" target="_blank">
+                                    https://infinitelist.github.io/In_Progress/
+                                </a>
+                            </label>
+                        </fieldset>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
